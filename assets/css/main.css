@@ -1178,8 +1178,10 @@ section,
 --------------------------------------------------------------*/
 .hero {
   padding: 120px 0 100px;
+  padding-bottom: 0px;
   position: relative;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .hero .hero-content h1 {
@@ -1563,8 +1565,21 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  background-color: color-mix(in srgb, var(--background-color), var(--accent-color) 2%);
+  /* background-color: color-mix(in srgb, var(--background-color), var(--accent-color) 2%);
+  background-color: #222; */
+  background: radial-gradient(circle, #333 0%, #111 100%);
+  padding-top: 100px;
 }
+
+.services h2 {
+  color:#fff;
+  opacity: .8;
+}
+.services p {
+  color:#fff;
+  opacity: .4;
+}
+
 
 .services .service-item {
   padding: 60px 40px;
@@ -1641,7 +1656,7 @@ section,
   font-size: 16px;
   line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-bottom: 32px;
+  margin-bottom: 0px;
   flex-grow: 1;
 }
 
@@ -1655,6 +1670,7 @@ section,
   gap: 8px;
   transition: all 0.3s ease-in-out;
   align-self: flex-start;
+  display: none;
 }
 
 .services .service-item .service-link i {
