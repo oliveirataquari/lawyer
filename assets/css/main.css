@@ -1292,8 +1292,8 @@ section,
 }
 
 .hero .hero-image img {
-  border-radius: 12px;
-  box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 85%);
+  /* border-radius: 12px;
+  box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 85%); */
 }
 
 .hero .hero-image .floating-card {
