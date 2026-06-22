@@ -1639,6 +1639,15 @@ section,
   transition: transform 0.4s ease-in-out;
   flex-shrink: 0;
 }
+@media (max-width: 768px) {
+  .services .service-item .service-icon {
+   width: 60px;
+   height: 60px;
+  }
+}
+
+
+
 
 .services .service-item .service-icon i {
   font-size: 32px;
@@ -1680,17 +1689,17 @@ section,
 
 @media (max-width: 768px) {
   .services .service-item {
-    padding: 40px 24px;
+    padding: 20px;
   }
 
   .services .service-item .service-icon {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 24px;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 20px;
   }
 
   .services .service-item .service-icon i {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .services .service-item h3 {
