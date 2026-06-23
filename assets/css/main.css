@@ -1664,7 +1664,8 @@ section,
 .services .service-item p {
   font-size: 16px;
   line-height: 1.7;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 20%); */
+  color:#000;
   margin-bottom: 0px;
   flex-grow: 1;
 }
@@ -1713,6 +1714,7 @@ section,
   }
 }
 
+
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
@@ -1729,6 +1731,11 @@ section,
   font-weight: 300;
   margin-bottom: 30px;
   line-height: 1.2;
+}
+
+/* Tiago */
+.why-us .feature-content p {
+  /* display:none; */
 }
 
 @media (max-width: 768px) {
