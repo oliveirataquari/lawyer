@@ -775,7 +775,7 @@ section,
 
 .section-title .subtitle {
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: var(--accent-color);
   text-transform: uppercase;
@@ -791,7 +791,7 @@ section,
   left: 50%;
   transform: translateX(-50%);
   width: 40px;
-  height: 1px;
+  height: 2px;
   background: var(--accent-color);
 }
 
@@ -1723,7 +1723,12 @@ section,
 }
 
 .why-us .content {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+}
+
+.why-us i {
+  color: var(--red-color);
+  font-size: 1.4rem;
 }
 
 .why-us .content h2 {
