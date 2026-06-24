@@ -1791,6 +1791,10 @@ section,
   transform: scale(1.1);
 }
 
+.why-us .feature-item:hover .icon-wrapper i {
+  color:#fff
+}
+
 @media (max-width: 768px) {
   .why-us .feature-item {
     flex-direction: column;
@@ -1855,339 +1859,7 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
-.portfolio .portfolio-filters {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0;
-  margin-bottom: 80px;
-  padding: 0;
-  list-style: none;
-}
 
-@media (max-width: 768px) {
-  .portfolio .portfolio-filters {
-    margin-bottom: 60px;
-    gap: 8px;
-  }
-}
-
-.portfolio .portfolio-filters li {
-  padding: 20px 0;
-  margin: 0 40px;
-  font-size: 0.95rem;
-  font-weight: 300;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  position: relative;
-}
-
-@media (max-width: 768px) {
-  .portfolio .portfolio-filters li {
-    margin: 0 20px;
-    padding: 16px 0;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .portfolio .portfolio-filters li {
-    margin: 0 12px;
-    padding: 14px 0;
-    font-size: 0.85rem;
-  }
-}
-
-.portfolio .portfolio-filters li::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 1px;
-  background-color: var(--accent-color);
-  transition: all 0.4s ease;
-  transform: translateX(-50%);
-}
-
-.portfolio .portfolio-filters li:hover {
-  color: var(--default-color);
-}
-
-.portfolio .portfolio-filters li:hover::after {
-  width: 100%;
-}
-
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--default-color);
-  font-weight: 400;
-}
-
-.portfolio .portfolio-filters li.filter-active::after {
-  width: 100%;
-}
-
-.portfolio .portfolio-card {
-  height: 100%;
-}
-
-.portfolio .portfolio-card .project-visual {
-  position: relative;
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-.portfolio .portfolio-card .project-visual img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-@media (max-width: 768px) {
-  .portfolio .portfolio-card .project-visual img {
-    height: 250px;
-  }
-}
-
-.portfolio .portfolio-card .project-visual .project-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(54, 144, 231, 0.85), rgba(54, 144, 231, 0.75));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease;
-}
-
-.portfolio .portfolio-card .project-visual .project-overlay .overlay-content {
-  display: flex;
-  gap: 20px;
-}
-
-.portfolio .portfolio-card .project-visual .project-overlay .overlay-content a {
-  width: 48px;
-  height: 48px;
-  background-color: var(--contrast-color);
-  color: var(--accent-color);
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-}
-
-.portfolio .portfolio-card .project-visual .project-overlay .overlay-content a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.portfolio .portfolio-card .project-visual:hover img {
-  transform: scale(1.05);
-}
-
-.portfolio .portfolio-card .project-visual:hover .project-overlay {
-  opacity: 1;
-  visibility: visible;
-}
-
-.portfolio .portfolio-card .project-details {
-  padding: 20px 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio .portfolio-card .project-details .project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.portfolio .portfolio-card .project-details .project-header .project-category {
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--accent-color);
-}
-
-.portfolio .portfolio-card .project-details .project-header .project-year {
-  font-size: 0.85rem;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-weight: 300;
-}
-
-.portfolio .portfolio-card .project-details .project-title {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: var(--heading-color);
-  line-height: 1.3;
-}
-
-@media (max-width: 768px) {
-  .portfolio .portfolio-card .project-details .project-title {
-    font-size: 1.35rem;
-  }
-}
-
-.portfolio .portfolio-card .project-details .project-description {
-  font-size: 0.95rem;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-bottom: 30px;
-  line-height: 1.7;
-  flex-grow: 1;
-}
-
-.portfolio .portfolio-card .project-details .project-meta {
-  margin-top: auto;
-}
-
-.portfolio .portfolio-card .project-details .project-meta .client-name {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--default-color);
-  margin-bottom: 16px;
-}
-
-.portfolio .portfolio-card .project-details .project-meta .project-scope {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.portfolio .portfolio-card .project-details .project-meta .project-scope .scope-item {
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 6px 0;
-  position: relative;
-}
-
-.portfolio .portfolio-card .project-details .project-meta .project-scope .scope-item:not(:last-child)::after {
-  content: "·";
-  position: absolute;
-  right: -8px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.portfolio .portfolio-conclusion {
-  margin-top: 120px;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .portfolio .portfolio-conclusion {
-    margin-top: 80px;
-  }
-}
-
-.portfolio .portfolio-conclusion .conclusion-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.portfolio .portfolio-conclusion .conclusion-content h4 {
-  font-size: 1.75rem;
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: var(--heading-color);
-}
-
-@media (max-width: 768px) {
-  .portfolio .portfolio-conclusion .conclusion-content h4 {
-    font-size: 1.5rem;
-  }
-}
-
-.portfolio .portfolio-conclusion .conclusion-content p {
-  font-size: 1rem;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-bottom: 40px;
-  line-height: 1.7;
-}
-
-.portfolio .portfolio-conclusion .conclusion-content .conclusion-actions {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  align-items: center;
-}
-
-@media (max-width: 576px) {
-  .portfolio .portfolio-conclusion .conclusion-content .conclusion-actions {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-.portfolio .portfolio-conclusion .conclusion-content .conclusion-actions .primary-action {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 16px 32px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  border-radius: 6px;
-  font-size: 0.95rem;
-  font-weight: 400;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.portfolio .portfolio-conclusion .conclusion-content .conclusion-actions .primary-action i {
-  font-size: 0.9rem;
-  transition: transform 0.3s ease;
-}
-
-.portfolio .portfolio-conclusion .conclusion-content .conclusion-actions .primary-action:hover {
-  background-color: color-mix(in srgb, var(--accent-color), black 10%);
-  transform: translateY(-1px);
-}
-
-.portfolio .portfolio-conclusion .conclusion-content .conclusion-actions .primary-action:hover i {
-  transform: translateX(2px);
-}
-
-.portfolio .portfolio-conclusion .conclusion-content .conclusion-actions .secondary-action {
-  color: var(--default-color);
-  font-size: 0.95rem;
-  font-weight: 400;
-  text-decoration: none;
-  position: relative;
-}
-
-.portfolio .portfolio-conclusion .conclusion-content .conclusion-actions .secondary-action::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: var(--default-color);
-  transition: width 0.3s ease;
-}
-
-.portfolio .portfolio-conclusion .conclusion-content .conclusion-actions .secondary-action:hover {
-  color: var(--default-color);
-}
-
-.portfolio .portfolio-conclusion .conclusion-content .conclusion-actions .secondary-action:hover::after {
-  width: 100%;
-}
 
 /*--------------------------------------------------------------
 # Team Section
@@ -4616,4 +4288,51 @@ section,
 --------------------------------------------------------------*/
 .hide {
   display: none !important;
+}
+
+.background-img {
+  position: relative; /* Necessário para posicionar o overlay */
+  min-height: 480px;
+  background-size: cover;
+  background-position: center center;
+  background-color: #000;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;      
+  justify-content: center;  
+}
+
+/* Criando a película escura */
+.background-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Altere o 0.6 para controlar a opacidade (0 = transparente, 1 = totalmente preto) */
+  background-color: rgba(0, 0, 0, 0.1); 
+  z-index: 1;
+}
+
+/* Garante que o conteúdo do container fique por cima da película */
+.background-img .container {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .background-img {
+    min-height: 300px;
+    background-position-x: -500px; /* Dica: background-position: -500px center; seria mais seguro aqui */
+  }
+}
+
+.background-img h2 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
 }
