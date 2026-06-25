@@ -18,6 +18,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,12 +52,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#hero2" class="active">Início</a></li>
+          <li><a href="#services">Atuação</a></li>
+          <li><a href="#why-us">Diferenciais</a></li>
+          <li><a href="#team">Profissionais</a></li>
+          <li class="dropdown hide"><a href="#"><span>Dropdown</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
@@ -74,7 +75,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -487,51 +488,52 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Team</span>
-        <h2>Meet Our Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde
-          omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <span class="subtitle">Profissionais</span>
+        <h2>Conheça um pouco sobre nós</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde
+          omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p> -->
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-5">
 
-          <div class="col-lg-4 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-info text-end">
-                <h4>Michael Chen</h4>
-                <span>Chief Technology Officer</span>
-                <p>Mauris blandit aliquet elit eget tincidunt nibh pulvinar rutrum tellus ac blandit elit eget
-                  tincidunt mauris.</p>
-                <div class="social">
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-github"></i></a>
-                </div>
+          <div class="col-lg-4 d-flex align-items-center order-2 order-lg-1 text-center text-lg-end" data-aos="fade-up"
+            data-aos-delay="300">
+            <div class="member-info text-center text-lg-end">
+              <h4>Dr. Ricardo Almeida</h4>
+              <span><i class="fa-solid fa-scale-balanced"></i> Sócio Fundador • Direito Empresarial</span>
+              <p>Mais de 12 anos auxiliando empresas e empreendedores na construção de relações comerciais seguras,
+                duradouras e juridicamente sólidas.</p>
+              <div class="social d-flex justify-content-center justify-content-lg-end">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
               </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 d-flex align-items-end" data-aos="fade-up" data-aos-delay="250">
-            <div class="team-member">
-              <img src="assets/img/casal2.jpg" class="img-fluid" alt="Michael Chen" loading="lazy">
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-info">
-                <h4>Michael Chen</h4>
-                <span>Chief Technology Officer</span>
-                <p>Mauris blandit aliquet elit eget tincidunt nibh pulvinar rutrum tellus ac blandit elit eget
-                  tincidunt mauris.</p>
-                <div class="social">
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-github"></i></a>
-                </div>
+          <div class="col-lg-4 d-flex align-items-end justify-content-center order-1 order-lg-2" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="team-member">
+              <img src="assets/img/casal-transp1.webp" class="img-fluid" alt="Michael Chen" loading="lazy">
+            </div>
+          </div><!-- End imagem dupla -->
+
+          <div class="col-lg-4 d-flex align-items-center justify-content-center order-3 order-lg-3 text-lg-start"
+            data-aos="fade-up" data-aos-delay="300">
+            <div class="member-info text-center text-lg-start">
+              <h4>Dra. Mariana Costa</h4>
+              <span><i class="fa-solid fa-scale-balanced"></i> Sócia • Direito de Família e Sucessões</span>
+              <p>Atuação dedicada à proteção dos interesses familiares e patrimoniais, com atendimento humanizado e foco
+                na resolução eficiente de conflitos.</p>
+              <div class="social d-flex justify-content-center justify-content-lg-start">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
               </div>
+            </div>
           </div><!-- End Team Member -->
-
-
 
         </div>
 
@@ -539,8 +541,87 @@
 
     </section><!-- /Team Section -->
 
+
+
+    <!-- Steps (etapas do trabalho e atendimento) -->
+    <section id="steps" class="steps section">
+
+      <!-- Section Title -->
+      <div class="container section-title pb-1" data-aos="fade-up">
+        <span class="subtitle">Atendimento</span>
+        <h2>Um processo simples e transparente</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+          <div class="row g-5">
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-1-circle-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Primeiro contato</h3>
+                  <p>Você apresenta sua necessidade por WhatsApp ou formulário.</p>
+                </div>
+              </div>
+            </div><!-- End Feature Item -->
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-2-circle-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Análise Jurídica</h3>
+                  <p>Avaliamos a situação e identificamos as melhores alternativas.</p>
+                </div>
+              </div>
+            </div><!-- End Feature Item -->
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-3-circle-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Definição da Estratégia</h3>
+                  <p>Explicamos os próximos passos e orientamos sobre toda a condução do caso.</p>
+                </div>
+              </div>
+            </div><!-- End Feature Item -->
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-4-circle-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Acompanhamento</h3>
+                  <p>Mantemos comunicação constante durante todo o atendimento.</p>
+                </div>
+              </div>
+            </div><!-- End Feature Item -->
+
+          </div>
+
+          <div class="text-center pt-5 pb-5">
+            <a href="#" class="btn-primary">Fale com um advogado</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Diferenciais -->
+
+
+
+
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <section id="testimonials" class="testimonials section hide">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -726,6 +807,99 @@
       </div>
 
     </section><!-- /Testimonials Section -->
+
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">F.A.Q</span>
+        <h2>Dúvidas comuns</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+
+            <div class="faq-wrapper">
+
+              <div class="faq-item faq-active-x" data-aos="fade-up" data-aos-delay="150">
+                <div class="faq-header">
+                  <span class="faq-number">01</span>
+                  <h4>Preciso agendar horário para atendimento?</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>Sim. Trabalhamos com atendimento previamente agendado para garantir maior dedicação a cada
+                      cliente.</p>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-header">
+                  <span class="faq-number">02</span>
+                  <h4>O atendimento pode ser online?</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>Sim. Realizamos atendimentos presenciais e virtuais.</p>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="faq-header">
+                  <span class="faq-number">03</span>
+                  <h4>Como funciona a primeira consulta?</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>A consulta é destinada à análise inicial da situação e orientação jurídica adequada.</p>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="faq-header">
+                  <span class="faq-number">04</span>
+                  <h4>Atendem empresas?</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>Sim. Prestamos assessoria jurídica para empresas de diversos segmentos.</p>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
