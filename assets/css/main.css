@@ -144,6 +144,8 @@ h6 {
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -604,6 +606,8 @@ h6 {
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
@@ -825,10 +829,9 @@ section,
   background-color: var(--cinza-color);
 }
 
-
 @media (max-width: 768px) {
   .hero-video {
-    min-height: 60vh;
+    min-height: 55vh;
     /* display: block; */
   }
 }
@@ -849,8 +852,9 @@ section,
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
-  .hero-video .hero-content h1  {
-    font-size: 1.4rem;
+  .hero-video .hero-content h1 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
   }
 }
 
@@ -860,6 +864,12 @@ section,
    margin-bottom: 30px;
    font-size: 1.4rem;
    font-weight: 400;
+}
+@media (max-width: 768px) {
+  .hero-video .hero-content h3 {
+    font-size: 1rem;
+    display: none;
+  }
 }
 
 .hero-video .hero-content .hero-tag {
@@ -1184,6 +1194,11 @@ section,
   overflow: hidden;
   background-color: #fff;
 }
+@media (max-width: 768px) {
+  .hero {
+    padding: 0px 0;
+  }
+}
 
 .hero .hero-content h1 {
   font-size: 2.8rem;
@@ -1195,7 +1210,7 @@ section,
 
 @media (max-width: 768px) {
   .hero .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -1204,6 +1219,12 @@ section,
   line-height: 1.7;
   margin-bottom: 3rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+@media (max-width: 768px) {
+  .hero .hero-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
 
 .hero .hero-cta {
@@ -1264,18 +1285,36 @@ section,
 .hero .hero-stats {
   display: flex;
   gap: 3rem;
+  margin-top: 2rem;
 }
 
+/* Modificado para telas de tablets (ajusta o gap sem quebrar) */
 @media (max-width: 768px) {
   .hero .hero-stats {
-    gap: 2rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap; /* Impede os itens de pularem para a linha de baixo */
+    text-align: center;
   }
 }
 
+/* Modificado para telas de celulares */
 @media (max-width: 576px) {
   .hero .hero-stats {
-    flex-direction: column;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: row; /* Força os elementos a continuarem lado a lado */
+    flex-wrap: nowrap;    /* Garante linha única */
+    gap: 0.5rem;         /* Diminui o espaçamento para caber em telas pequenas */
+    justify-content: space-between;
+  }
+
+  /* Reduz sutilmente os tamanhos para caber tudo sem quebras feias */
+  .hero .hero-stats .stat-item .stat-number {
+    font-size: 1.5rem;   
+  }
+  .hero .hero-stats .stat-item .stat-label {
+    font-size: 0.75rem;  
+    line-height: 1.2;
   }
 }
 
@@ -1353,10 +1392,6 @@ section,
 }
 
 @media (max-width: 992px) {
-  .hero {
-    padding: 80px 0 60px;
-  }
-
   .hero::before {
     display: none;
   }
@@ -1369,6 +1404,7 @@ section,
     margin-top: 3rem;
   }
 }
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -1942,7 +1978,7 @@ section,
 }
 
 .steps .feature-item:hover .icon-wrapper i {
-  color:#fff
+  color:#fff;
 }
 
 @media (max-width: 768px) {
@@ -1996,7 +2032,7 @@ section,
 .steps .feature-content p {
   font-size: 1rem;
   line-height: 1.7;
-  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  color: color-mix(in srgb, #fff, transparent 50%);
   margin: 0;
 }
 
@@ -2023,6 +2059,8 @@ section,
   background-color: #fff;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  background: url(../img/bg-team1.jpg) center bottom no-repeat;
+  background-size: contain;
 }
 
 .team .member-img {
@@ -2076,9 +2114,9 @@ section,
   justify-content: center;
   width: 40px;
   height: 40px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border: 1px solid color-mix(in srgb, var(--red-color), transparent 65%);
   border-radius: 50%;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--red-color), transparent 40%);
   font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
@@ -4682,3 +4720,19 @@ section,
   margin-bottom: 1.5rem;
   letter-spacing: -1px;
 }
+
+.map {
+  padding-bottom: 0px; margin-bottom: -10px; padding-top: 120px
+}
+
+
+/*
+@media (max-width: 768px) {
+  section  {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 100% !important;
+    overflow-x: hidden;
+  }
+}
+  */
